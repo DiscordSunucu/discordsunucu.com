@@ -1,2 +1,3 @@
-# discordsunucu.com
-Discord Sunucu Web Site
+# dcsv.me API Services (discordsunucu.com)
+
+## Oy Verenler Listesi
