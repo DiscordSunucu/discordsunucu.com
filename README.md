@@ -1,3 +1,82 @@
 # dcsv.me API Services (discordsunucu.com)
 
-## Oy Verenler Listesi
+## OY VERENLER LİSTESİ
+
+Bu belge, Discordsunucu.com API'si kullanarak belirli bir Discord sunucusu için oy bilgilerini sorgulamanın nasıl yapılacağını anlatır.
+
+
+## API URL
+
+[https://discordsunucu.com/api/vote/SERVER_ID](https://discordsunucu.com/api/vote/SERVER_ID)
+**Not:** `SERVER_ID` yeri, oy bilgilerini almak istediğiniz Discord sunucusunun kimliğiyle değiştirilmelidir.
+
+
+## Token Almak
+
+API'yi kullanabilmek için öncelikle bir erişim belirteci (token) almanız gerekmektedir. Token, Discord sunucunuzun #token-al kanalından elde edilebilir. [Discord Sunucumuz](https://discord.gg/dcsunucu) https://discord.gg/dcsunucu
+
+
+## Limit
+
+API'den alınan oyları belirli bir limitte almak için isteğin sonuna `?limit=XX` şeklinde ekleyebilirsiniz. `XX` yeri, almak istediğiniz oyların limitini belirlemek için kullanılır.
+
+ ## Örnek PHP Kodu
+
+Aşağıdaki PHP kodu, API'ye bir GET isteği yaparak oy bilgilerini alır:
+```php
+<?php
+$url = "https://discordsunucu.com/api/vote/SERVER_ID";
+//LİMİTLİ ÖRNEK
+// $url = "https://discordsunucu.com/api/vote/SERVER_ID?limit=LIMIT";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+$headers = array(
+   "Authorization: Bearer {TOKEN}",
+);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+//for debug only!
+curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+$resp = curl_exec($curl);
+curl_close($curl);
+var_dump($resp);
+?>
+```
+
+ ## Örnek PHP Kodu
+
+Aşağıdaki NODEJS kodu, API'ye bir GET isteği yaparak oy bilgilerini alır:
+```js
+const http = require("https");
+
+const url = 'https://discordsunucu.com/api/vote/1073918617487421531';
+
+const options = {
+    'Authorization': 'Bearer 2ece17a9cf5f9e05a616705d38501e95',
+};
+
+let result = '';
+const req = http.request(url, options, (res) => {
+    console.log(res.statusCode);
+
+    res.setEncoding('utf8');
+    res.on('data', (chunk) => {
+        result += chunk;
+    });
+
+    res.on('end', () => {
+        console.log(result);
+    });
+});
+
+req.on('error', (e) => {
+    console.error(e);
+});
+
+req.end();
+```
+
+
