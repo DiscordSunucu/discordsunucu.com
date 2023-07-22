@@ -8,6 +8,7 @@ Bu belge, Discordsunucu.com API'si kullanarak belirli bir Discord sunucusu için
 ## API URL
 
 [https://discordsunucu.com/api/vote/SERVER_ID](https://discordsunucu.com/api/vote/SERVER_ID)
+
 **Not:** `SERVER_ID` yeri, oy bilgilerini almak istediğiniz Discord sunucusunun kimliğiyle değiştirilmelidir.
 
 
@@ -46,7 +47,7 @@ var_dump($resp);
 ?>
 ```
 
- ## Örnek PHP Kodu
+ ## Örnek NODEJS Kodu
 
 Aşağıdaki NODEJS kodu, API'ye bir GET isteği yaparak oy bilgilerini alır:
 ```js
@@ -79,4 +80,41 @@ req.on('error', (e) => {
 req.end();
 ```
 
+
+
+## API Yanıtı Örnek Formatı
+
+API, bir JSON yanıtı döndürür. Yanıt, aşağıdaki bilgileri içerebilir:
+
+- `total_user`: Toplam kullanıcı sayısı.
+- `total_vote`: Toplam oy sayısı.
+- `votes`: Kullanıcı oylarının detaylarını içeren bir dizi.
+
+## API yanıtı örnek formatı:
+
+```json
+{
+    "total_user": 162,
+    "total_vote": 269,
+    "votes": [{
+        "userid": "425566714499956748",
+        "username": "MUZAFFER#0907",
+        "lastVoteTime": "2023-07-22 07:40:19",
+        "voteCount": "22"
+    }, {
+        "userid": "1106284195384414238",
+        "username": "Châws#0001",
+        "lastVoteTime": "2023-07-22 07:42:42",
+        "voteCount": "12"
+    }, ....]
+}
+```
+
+## Notlar
+
+- Bu örnek sadece API isteği yapmanın temel bir örneğidir ve gerçek uygulamanızda hata yönetimi ve güvenlik önlemleri gibi ek kontroller eklemeniz önemlidir.
+- API belirtecinizi güvenli bir şekilde saklayın ve kimseyle paylaşmayın.
+- Daha fazla bilgi için, dcsv.me discord sunucumuzdaki API kategorisini ziyaret edin.
+
+`Bu README dosyası, Discordsunucu.com API'sini kullanarak oy bilgilerini sorgulamak için gerekli bilgileri ve örnekleri içermektedir.`
 
