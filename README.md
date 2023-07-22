@@ -81,15 +81,13 @@ req.end();
 ```
 
 
-## API Yanıtı Örnek Formatı
-
 API, bir JSON yanıtı döndürür. Yanıt, aşağıdaki bilgileri içerebilir:
 
 - `total_user`: Toplam kullanıcı sayısı.
 - `total_vote`: Toplam oy sayısı.
 - `votes`: Kullanıcı oylarının detaylarını içeren bir dizi.
 
-JSON Çıktısı:
+## API Yanıtı Örnek Formatı
 
 ```json
 {
