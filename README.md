@@ -94,13 +94,13 @@ API, bir JSON yanıtı döndürür. Yanıt, aşağıdaki bilgileri içerebilir:
     "total_user": 162,
     "total_vote": 269,
     "votes": [{
-        "userid": "425566714499956748",
-        "username": "MUZAFFER#0907",
+        "userid": "348810453478277131",
+        "username": "volkan1",
         "lastVoteTime": "2023-07-22 07:40:19",
         "voteCount": "22"
     }, {
-        "userid": "1106284195384414238",
-        "username": "Châws#0001",
+        "userid": "745632127453888563",
+        "username": "berk.dev",
         "lastVoteTime": "2023-07-22 07:42:42",
         "voteCount": "12"
     }, ....]
