@@ -53,10 +53,10 @@ Aşağıdaki NODEJS kodu, API'ye bir GET isteği yaparak oy bilgilerini alır:
 ```js
 const http = require("https");
 
-const url = 'https://discordsunucu.com/api/vote/1073918617487421531';
+const url = 'https://discordsunucu.com/api/vote/SERVER_ID';
 
 const options = {
-    'Authorization': 'Bearer 2ece17a9cf5f9e05a616705d38501e95',
+    'Authorization': 'Bearer {TOKEN}',
 };
 
 let result = '';
@@ -118,4 +118,5 @@ API, bir JSON yanıtı döndürür. Yanıt, aşağıdaki bilgileri içerebilir:
 - Daha fazla bilgi için, dcsv.me discord sunucumuzdaki API kategorisini ziyaret edin.
 
 `Bu README dosyası, Discordsunucu.com API'sini kullanarak oy bilgilerini sorgulamak için gerekli bilgileri ve örnekleri içermektedir.`
+
 
