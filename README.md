@@ -87,7 +87,7 @@ API, bir JSON yanıtı döndürür. Yanıt, aşağıdaki bilgileri içerebilir:
 - `total_vote`: Toplam oy sayısı.
 - `votes`: Kullanıcı oylarının detaylarını içeren bir dizi.
 
- ## APİ YANITI
+ ## API YANITI
 
 ```json
 {
