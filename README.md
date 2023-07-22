@@ -1,8 +1,8 @@
-# dcsv.me API Services (discordsunucu.com)
+# Discordsunucu.com API Servisi (Dcsv.me)
 
 ## OY VERENLER LİSTESİ
 
-Bu belge, Discordsunucu.com API'si kullanarak belirli bir Discord sunucusu için oy bilgilerini sorgulamanın nasıl yapılacağını anlatır.
+Bu belge, Discordsunucu.com API'si kullanarak belirli bir Discord sunucusu için oy verenleri sorgulamanın nasıl yapılacağını anlatır.
 
 
 ## API URL
