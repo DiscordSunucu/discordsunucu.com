@@ -108,6 +108,10 @@ JSON Çıktısı:
     }, ....]
 }
 ```
+## UYARI
+
+- Saatte 60 istekten fazla istek gönderdiğinizde uzun süre timeout sorunu yaşarsınız. İsteklerinizi sınırlı ve dikkatli kullanmaya özen gösterin.
+
 
 ## Notlar
 
