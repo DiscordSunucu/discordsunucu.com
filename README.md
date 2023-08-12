@@ -14,7 +14,7 @@ Bu belge, Discordsunucu.com API'si kullanarak belirli bir Discord sunucusu için
 
 ## Token Almak
 
-API'yi kullanabilmek için öncelikle bir erişim belirteci (token) almanız gerekmektedir. Tokenı, Discord sunucunuzdan almak için : https://discord.com/channels/996354368393711626/1132335401760206948/1139763403196485674
+API'yi kullanabilmek için öncelikle bir erişim belirteci (token) almanız gerekmektedir. Tokenı, [Discord sunucunuzdan](https://discord.gg/dcsunucu) almak için : https://discord.com/channels/996354368393711626/1132335401760206948/1139763403196485674
 
 ## Limit
 
